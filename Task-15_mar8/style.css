@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    box-sizing: border-box; 
+  }
+  .banner h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.2rem;
+    color: rgb(245, 233, 233);
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+  
+  .banner {
+    background-image: url('images/bg.jpg'); 
+    background-size: cover;
+    height: 800px;
+    color: white;
+    padding: 5%;
+    text-align: left;
+  }
+  .banner h1,
+.desp {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  animation: typing 4s steps(40, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: black;
+  }
+}  
+  .social-icons {
+    margin-top: 2%;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 2%;
+    color:white;
+    font-size: 2vw; 
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #007bff;
+  }
+  
+  .banner h1 {
+    font-size: 3vw; 
+    margin: 2% 0;
+  }
+  
+  .banner p {
+    font-size: 2vw; 
+    margin: 2% 0;
+  }
+  
+  .newsletter {
+    margin-top: 3%;
+  }
+  
+  .newsletter p {
+    font-size: 1.5vw; 
+    margin-bottom: 2%;
+  }
+  
+  .newsletter form {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 2%;
+    font-size: 1.5vw;
+    border: 1px solid #ccc;
+    width: 40%; 
+    margin-right: 2%;
+  }
+  
+  .newsletter button {
+    padding: 1% 4%;
+    font-size: 1.5vw; 
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newsletter button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 962px) {
+    .banner {
+      height: auto; 
+      padding: 10% 5%;
+    }
+  
+    .social-icons a {
+      font-size: 3vw; 
+    }
+  
+    .banner h1 {
+      font-size: 5vw;
+    }
+  
+    .banner p {
+      font-size: 3vw;
+    }
+  
+    .newsletter p {
+      font-size: 2vw; 
+    }
+  
+    .newsletter input[type="email"] {
+      font-size: 2vw; 
+      width: 50%; 
+    }
+  
+    .newsletter button {
+      font-size: 2vw; 
+    }
+  }
+  

@@ -1,0 +1,8 @@
+Specificity and Inheritance:
+
+The order of it:
+
+1.id
+2.attribute
+3.class
+4.element

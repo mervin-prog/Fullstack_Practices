@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Plan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Healthcare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/exercise">Exercise</a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="gradient_background">
+        <div class="exercisecontain">
+            <h2 class="py-5 fw-bold">Gym Exercise Plan for <%=heading%> (BMI : <%=bmi%>)</h2>
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <div class="exercise-card p-5">
+                        <% if (bmi < 18.5) { %>
+                            <h2 class="pt-2 pb-5 fw-bold">Underweight (BMI &lt; 18.5):</h2>
+                            <ul style="text-align: left;">
+                                <li>Incorporate strength training exercises to build muscle mass. Focus on compound movements like squats, deadlifts, bench presses, and rows.</li>
+                                <li>Add resistance exercises using resistance bands or free weights to challenge muscles and promote growth.</li>
+                                <li>Incorporate cardiovascular exercises such as brisk walking, cycling, or swimming to improve overall fitness and cardiovascular health.</li>
+                                <li>Include flexibility exercises like yoga or stretching to improve flexibility and prevent injuries.</li>
+                                <li>Consult with a certified fitness trainer or exercise physiologist to design a personalized exercise program tailored to your needs and goals.</li>
+                            </ul>
+                        <% } else if (bmi >= 18.5 && bmi <= 24.9) { %>
+                            <h2 class="pt-2 pb-5 fw-bold">Normal Weight (BMI 18.5 - 24.9):</h2>
+                            <ul style="text-align: left;">
+                                <li>Engage in a variety of physical activities such as walking, jogging, swimming, or cycling to maintain overall fitness.</li>
+                                <li>Incorporate strength training exercises using body weight, resistance bands, or free weights to build and maintain muscle mass.</li>
+                                <li>Add flexibility exercises like yoga or stretching to improve range of motion and prevent injuries.</li>
+                                <li>Include cardiovascular exercises to improve heart health and endurance, such as running, cycling, or aerobics.</li>
+                                <li>Strive for at least 150 minutes of moderate-intensity aerobic activity or 75 minutes of vigorous-intensity aerobic activity per week, as recommended by health authorities.</li>
+                            </ul>
+                            <% } else if (bmi >= 25 && bmi <= 29.9) { %>
+                                <h2 class="pt-2 pb-5 fw-bold">Overweight (BMI 25 - 29.9):</h2>
+                                <ul style="text-align: left;">
+                                    <li>Incorporate a combination of cardiovascular exercises and strength training to promote weight loss and improve metabolic health.</li>
+                                    <li>Focus on high-intensity interval training (HIIT) workouts to burn calories and boost metabolism.</li>
+                                    <li>Include resistance training exercises to build lean muscle mass and increase metabolism.</li>
+                                    <li>Engage in regular physical activity to create a calorie deficit and support weight loss goals.</li>
+                                    <li>Consult with a fitness professional to create a personalized exercise plan tailored to your specific needs and preferences.</li>
+                                </ul>
+                            <% } else { %>
+                                <h2 class="pt-2 pb-5 fw-bold">Obese (BMI ≥ 30):</h2>
+                                <ul style="text-align: left;">
+                                    <li>Begin with low-impact exercises such as walking, swimming, or cycling to reduce strain on joints and improve cardiovascular health.</li>
+                                    <li>Incorporate strength training exercises to build lean muscle mass and increase metabolism.</li>
+                                    <li>Gradually increase exercise intensity and duration to promote weight loss and improve overall fitness.</li>
+                                    <li>Include flexibility exercises like yoga or stretching to improve mobility and prevent injuries.</li>
+                                    <li>Consult with a healthcare provider or certified fitness professional to create a safe and effective exercise plan tailored to your individual needs and limitations.</li>
+                                </ul>
+                            <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

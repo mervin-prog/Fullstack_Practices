@@ -1,0 +1,54 @@
+<%- include('partials/header') %>
+
+
+<div class="container">
+<div class="card">
+<div class="modal-content rounded-4 shadow">
+    <div class="modal-header p-5 pb-4 border-bottom-0">
+      <h1 class="fw-bold mb-0 fs-2">Sign up </h1>
+      
+    </div>
+
+    <div class="modal-body p-5 pt-0">
+
+      <%# Register %>
+
+      <form action="/register" method="post">
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="" name="fname" required>
+            <label for="floatingInput" >First name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="" name="lname" required> 
+            <label for="floatingInput">Last name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control rounded-3" id="floatingInput" name="email" placeholder="" required>
+          <label for="floatingInput" >Email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control rounded-3" id="floatingPassword" name="password" placeholder="" required>
+          <label for="floatingPassword">Password</label>
+        </div>
+        <button class="w-100 py-2 mb-2 btn btn-success" type="submit">Register</button>
+        <br>
+        <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+        <hr class="my-4">
+      </form>
+
+      <%# Login %>
+
+      <form action="/login" method="get">
+
+        <button class="w-100 py-2 mb-2 btn btn-dark" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+ 
+
+  <%- include('partials/footer') %>

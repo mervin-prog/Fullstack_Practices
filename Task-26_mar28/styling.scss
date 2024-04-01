@@ -1,0 +1,11 @@
+//CSS Pre-Processors (Sass):
+
+$fs:300px;
+$bg-color:red;
+$pd:100px 300px;
+
+.header-format{
+    font-size: $fs;
+    background-color: $bg-color;
+    padding: $pd;
+}

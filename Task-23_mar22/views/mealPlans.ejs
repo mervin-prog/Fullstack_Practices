@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Healthcare</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="gradient_background">
+    <div class="mealscontain">
+        <h2 class="py-5 fw-bold">Your Nutrition Plan</h2>
+        <div class="row featurette">
+            <div class="col-md-7">
+    
+        <div class="meal-card p-5">
+        <% if (bmi < 18.5) { %>
+            <h2 class="pt-2 pb-5 fw-bold">Underweight (BMI < 18.5): Nutrient-dense meal options to promote healthy weight gain.</h2>
+            <ul style="text-align: left;">
+                <li>Include a source of lean protein (chicken, fish, tofu, lentils) in each meal.</li>
+                <li>Incorporate plenty of fruits and vegetables for fiber, vitamins, and minerals.</li>
+                <li>Choose whole grains (quinoa, brown rice, whole grain bread) over refined grains.</li>
+                <li>Include healthy fats from sources like avocado, nuts, seeds, and olive oil.</li>
+                <li>Stay hydrated by drinking plenty of water throughout the day.</li>
+            </ul>
+        <% } else if (bmi >= 18.5 && bmi <= 24.9) { %>
+            <h2 class="pt-2 pb-5 fw-bold">Normal Weight (BMI 18.5 - 24.9): Balanced diet plans to maintain optimal health and well-being.</h2>
+            <ul style="text-align: left;">
+                <li>Aim for a colorful plate by incorporating a variety of fruits and vegetables.</li>
+                <li>Choose whole grains over refined grains for added fiber and nutrients.</li>
+                <li>Include a source of lean protein (such as poultry, fish, tofu, or legumes) with each meal.</li>
+                <li>Incorporate healthy fats from sources like nuts, seeds, avocado, and olive oil.</li>
+                <li>Stay hydrated by drinking plenty of water throughout the day.</li>
+            </ul>
+        <% } else if (bmi >= 25 && bmi <= 29.9) { %>
+            <h2 class="pt-2 pb-5 fw-bold">Overweight (BMI 25 - 29.9): Strategies to support weight loss and improve metabolic health.</h2>
+            <ul style="text-align: left;">
+                <li>Choose lean protein sources such as chicken, turkey, fish, tofu, and legumes.</li>
+                <li>Incorporate plenty of non-starchy vegetables to add volume and fiber to your meals.</li>
+                <li>Opt for whole grains like quinoa, brown rice, and whole wheat bread over refined grains.</li>
+                <li>Limit added sugars, processed foods, and high-calorie snacks.</li>
+                <li>Practice portion control and mindful eating to avoid overeating.</li>
+            </ul>
+        <% } else { %>
+            <h2 class="pt-2 pb-5 fw-bold">Obese (BMI ≥ 30): Tailored meal plans to manage weight effectively and reduce the risk of obesity-related complications.</h2>
+        <ul style="text-align: left;">
+            <li>Drink plenty of water throughout the day to stay hydrated and support digestion</li>
+            <li>Practice portion control by using smaller plates and bowls to avoid overeating.</li>
+            <li>Include a variety of colorful fruits and vegetables to ensure a range of nutrients.</li>
+            <li>Limit processed foods, sugary snacks, and high-calorie beverages like soda and juice.</li>
+            <li>Aim for at least 30 minutes of moderate-intensity exercise most days of the week, as approved by your healthcare provider.</li>
+        </ul>
+        <% } %>
+        </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

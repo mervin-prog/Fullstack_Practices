@@ -1,0 +1,2 @@
+1. Count Alphabets, digits, special symbols from  string
+2. learn java inner classes and implement using simple project

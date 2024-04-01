@@ -1,0 +1,1 @@
+create a healthcare landing page with exercise,yoga plans and calculate bmi and display a diet plan for different bmi results.

@@ -1,0 +1,6 @@
+Positioning :
+
+1.Static --Default flow of html.
+2.Relative--Position relative to default position.
+3.Absolute--Position relative to nearest ancestor (or) Top left corner of a webpage.
+4.Fixed--Position relative to top left corner of the browser window.

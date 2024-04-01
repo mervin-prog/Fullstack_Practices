@@ -1,0 +1,5 @@
+Display :
+
+1.block--can set height and width(default)
+2.inline--takes the size of the content.cannot set height and width.
+3.inline-block--combination of both inline and block.
