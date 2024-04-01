@@ -1,0 +1,25 @@
+
+body{
+    background-image : url('img.png'); background-repeat: no-repeat;background-attachment: fixed;background-size: cover;
+}
+#displayDetails {
+    margin-top: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #1e1515;
+    padding: 8px;
+  }
+  
+  th {
+    background-color: #eee5e5;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
