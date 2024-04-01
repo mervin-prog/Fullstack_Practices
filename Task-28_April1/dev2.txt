@@ -1,0 +1,51 @@
+When I usually write, I end up writing technical articles or how-to’s on different subjects. This time I wanted to write something different: my personal story of how I ended up becoming a full-stack engineer, even though this was not the career I pursued in college.
+
+Let’s start closest to the present, to give some context. I studied for years in college to become a Telecommunications Engineer. I chose that career because it involved two fields I like: Electric Engineering and Communications. I ended up learning how to design communication systems, calculate orbits for satellites, finding optimal points for microwave communication, etc. Everything but something related to web development (which is now my forte).
+
+So how did I end up being a programmer? It started long before college.
+In school, I was first introduced to a computer in my mother’s office. She worked for the US Army at a base here in Panama. She sometimes brought me to her office and there I saw my first computer, one of these old 8 inch floppy disk computers. I still remember the first computer program I ever saw: a Jeopardy computer game. I must have been 3 years old at that time and I still remember that ASCII interface and how I tried to figure it out, without any instructions.
+
+Fast forward a bit and I’m officially introduced to computers in first grade. To the other kids, this machine equipped with child programs was a bit overwhelming. For me, it made complete sense. It could also be due to the fact that almost everyone in my family is an engineer of some sort; machines have always been in our DNA.
+
+I was also good at math at that age. I’ve always been good at problem solving, using intuition to approach a problem and figure it out without guidance. I remember I used to go through the entire math book at home and start solving the problems by myself. I finished the entire math book in a month, without teacher guidance. If I had any doubts I would ask my father or mother and get the answer quickly. I think learning to read just removed the shackles to how I addressed problems and gave me the freedom to move on by myself.
+
+Fast forward a couple more years and there comes my first experience with programming, although secondhand.
+
+Learning by playing around
+My brother was in middle-school, and there he was being taught programming. I had never seen programming first hand. This was the first time I was looking at how a program was made.
+
+He was doing some homework in QBasic, struggling to get it solved.  I stood behind him, watching that blue screen filled with white letters and some weird english language. He was programming a calculator with a simple UI: two number prompts and a line of asterisks.
+
+So once he finished his homework, I went on and opened this program called QBasic and looked for the file he just saved. And I sat there, just reading those lines trying to figure out what was going on. I saw on the menu it said F5 to run the program, so I hit it, and saw the program run. Fill in the blanks, get the results. All cool, it’s a simple calculator. However, what I really wanted was to learn how it was working.
+
+Now, this is the first experience I ever had with programming, and I remember it crystal clear. I didn’t know what was going to happen, if I was going to break the PC or not, but I wanted to know how the calculator was working, so I saw a pattern. There were about 10 asterisks in the UI and then there were these lines that coincidentally have a 10 in it:
+
+FOR i = 1 TO 10
+
+PRINT “*”
+
+NEXT i
+
+Hmmm. What a coincidence. What would happen if I change that 10 to 15? Well, I did it and saw that 15 asterisks showed up in the view instead of 10. What if I change the asterisk in PRINT for something else, like an “x”? Well 15 “x” showed up in the UI. Then I saw this INPUT command saying "Enter a number, a semicolon, and a number1 text after the semicolon". Below the FOR, I was playing with a PRINT “Total: “; number1 + number2 command. I started playing with that and got a couple of syntax errors, but that day I learned two things I didn’t know the name for at that moment: I learned how Loops and variables work, and without realizing it, I also learned basic algebra (yep, programming taught me algebra years before I first saw it in school; I didn’t know it was named algebra until I took the class).
+
+Anyway, QBasic tickled my curiosity and I wanted to know what else I could do. Unfortunately I was two years younger than my brother so there was a limit on how much I could learn from his homework. So, I went on and started reading the Help section on QBasic, reading all the commands and what they did. I event took the time to write them all down on paper and the explanation for each. What a waste of time that was. Most of the commands I couldn’t understand what they did since the help was intended for experienced programmers or people who understood computers at a deeper level.
+
+A couple of years later I got dial up Internet at home. What a revolution that was! I went on looking for more QBasic online and learned a new word: tutorial. I started to see what was possible with QBasic, and suddenly found a new version called QuickBasic 4.5 which some developers used to build even complex games. I was amazed. I wanted to learn how they did it, and for the first time I learned about the limitations of BASIC and how you needed to expand it using a low level language. That’s when I learned Assembler. And it was painful, but now I was looking at computers at a lower level. Nonetheless, I was suddenly able to access a bigger palette of colors besides the original 16 in QBasic, and also was able to read input from the mouse. I was just starting middle school and I was already learning about interrupts and low level programming.
+
+I’m gonna move fast now because this article is getting too long.
+
+Moving forward, in high school I was introduced to HTML and some really basic javascript (like how to open up an alert or a prompt). Obviously I went to the Internet and learned more on javascript, and by the time I graduated high school I already knew CSS and PHP.
+
+On went my college years where I focused on everything but programming. But every time I tried to get out, it just dragged me back in. Even though I wasn’t studying Software Engineering, I ended up doing a lot of software projects in college, either for IEEE or to make some money on side projects.
+
+I graduated from college and rather than go into Telecommunications, I ended up working doing web development. Fast forward a couple more years, and now I am a Senior Full Stack Web developer and Devops. And now I cannot remember how to calculate the orbit of a satellite without having to go back to my college notes :P
+
+My piece of advice
+This piece of advice goes to developers starting up in this exciting field and it pretty simple:
+
+Leave your comfort zone!!
+When you are starting, most likely you’ll imagine all the wonders you can achieve with the language you are learning. Then at work, you start seeing those wonders. My best advice is, once you feel comfortable with a language or tech, try something new. If you feel you are good with Angular, try React or Vue. Are you good with a framework? Try another.
+
+Remember that financial advice of not putting all your eggs in one basket?The  same applies with the IT world. Diversify! The only way to find out how to solve a problem better is to be able to present the better strategy, and that better strategy is only as good as how vast your experience is with different solutions for that problem.
+
+Always try something new and judge on your own how good or bad it is.

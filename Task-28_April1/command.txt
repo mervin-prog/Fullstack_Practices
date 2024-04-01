@@ -1,0 +1,24 @@
+cd Task-28_April1
+touch dev1.txt
+git init
+git add .
+git status
+git config --global user.email "mervinrenie@gmail.com"
+git config --global user.name "mervin"
+git commit -m"Complete first developer story"
+git log
+git remote set-url origin https://github.com/mervin-prog/Developer_Story.git
+git config --global credential.helper store
+git push -u origin main 
+
+//Branching and Merging:
+git branch
+git branch extra-story
+git checkout extra-story
+touch dev2.txt
+code dev2.txt
+git commit -m"Complete second developer story"
+git log
+git checkout main
+git merge extra-story
+
