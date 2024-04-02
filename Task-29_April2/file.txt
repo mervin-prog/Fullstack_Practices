@@ -1,0 +1,46 @@
+Next Js is open-source React framework.
+
+It is used for server-side rendering(SSR) and static-site genration(SSG).
+
+*Server-Side Rendering (SSR) :
+
+It involves rendering React components on the server before sending the HTML to the client's browser.
+
+-->Rendering on the server-when a user requests a page from a next.js application, the server runs the REACT CODE for that particular page and generates the HTML content. 
+
+what it runs ? -includes executing any  asynchronous operations required to render the page or data-fetch for that particular page.
+
+-->Sending Pre-Rendered HTML- Once the server has generated the HTML content for the requested page, it sends this PRE-RENDERED HTML to the client's browser as the initial response. 
+
+This allows the user to see the content of the page more quickly , since they DON'T HAVE TO WAIT FOR JAVASCRIPT to download and execute before rendering.
+
+This leads to fast page loads and improves Search-engine optimization(SEO).
+
+how it improves SEO ? --> because search engines can easily index static HTML files.
+
+ *Static-site generation(SSG):
+ 
+Enables you to PRE-RENDER ALL PAGES OF YOUR SITE, ensuring that they are available to search engine crawlers(index) even if they don't support JavaScript.
+ 
+ Other functionalities are also implemented in next:
+ 
+ *Automatic code splitting:
+ 
+Automatically splits the code into smaller bundles, so the code for the required page only gets loaded which improves performance.
+ 
+ *Client-side routing:
+ 
+While creating routes for next applicaion this functionality includes a "file based-system" such as each page is associated with a specific file in the "pages" directory.
+
+-->Though it is a Frontend-framework, the cause for using next.js as Full-stack is it handles backend functionality without depending on another language.
+
+*API Routes: 
+
+Next.js allows you to create API routes by simply creating files inside the "pages/api" directory, making it easy to build backend functionality.
+
+Css support,typescript support and it provides automatic image optimization.
+
+Therfore next.js is fast and has powerful features which allows us to mainly focus on programming/web logic rather than setup and configuration.
+
+ 
+
