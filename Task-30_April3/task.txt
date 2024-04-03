@@ -1,0 +1,23 @@
+Apply programms on each topic:
+
+Arrays methods Objects methods
+
+Closures
+
+Functions Arrow functions
+
+Execution contest
+
+Try Catch & Error handling
+
+Variables (var, let, const)
+
+Strict mode
+
+Operators
+
+Timeout & Interval
+
+Type Conversions
+
+Classes

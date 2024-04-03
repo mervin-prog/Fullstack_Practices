@@ -1,0 +1,41 @@
+Execution context in JavaScript refers to the environment in which a piece of JavaScript code is executed.
+
+There are two types of execution contexts in JavaScript:
+
+Global Execution Context: (GEC)
+The default execution context in which the code that is not inside any function is executed. It's the outermost scope and is created when the script starts running.
+
+Function Execution Context: (FEC)
+Whenever a function is invoked, a new execution context is created for that function. Each function has its own execution context, which includes variables, parameters, and references to its outer lexical environment.
+
+
+
+what is lexical environment or scope -->When a function is defined within another function, it forms a lexical scope. This means that the inner function has access to variables declared in its outer function's scope.
+
+GLOBAL EXECUTION CONTEXT :
+
+1. Creates a Global Variable object that stores function and variables declarations.
+
+2.Creates the `this` object that stores all the variables and functions in the Global scope as methods and properties.
+
+3.Can't access the code of the Function contexts defined in it.
+
+4.Sets up memory space for variables and functions defined globally
+
+
+
+FUNCTION EXECUTION CONTEXT:
+
+1. Doesn't create a Global Variable object. Rather, it creates an argument object that stores all the arguments passed to the function.
+
+2. Doesn't create the `this` object, but has access to that of the environment in which it is defined. Usually the `window` object.
+
+3. Due to scoping, has access to the code(variables and functions) in the context it is defined and that of its parents
+
+4. Sets up memory space only for variables and functions defined within the function
+
+
+This is similar to Closure ?
+
+Execution context deals with the scope and context of function execution, 
+while closures involve capturing and maintaining references to variables from outer scopes.
