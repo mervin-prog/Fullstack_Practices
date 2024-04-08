@@ -1,0 +1,58 @@
+*{
+    font-family: Merriweather;
+}
+
+.gradient_background{
+	background: linear-gradient(-45deg, #FFBE98, #FEECE2, #F7DED0, #E2BFB3);
+	background-size: 180% 180%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.urlname{
+    font-size: 50px;
+    padding-left: 200px;
+}
+.btn-style{
+    margin-right: 10px;
+    border-radius: 50px;
+    padding: 5px 20px 5px 20px;
+}
+.btn-main-style{
+    border-radius: 50px;
+    padding: 10px 50px 10px 50px;
+}
+@media screen and (max-width: 991px){
+    .urlname{
+        font-size: 30px;
+        padding-left: 0;
+    }
+    .d-flex{
+        justify-content: center;
+    }
+}
+.card-style{
+    border-radius: 20px;
+    border: 5px solid black;
+    margin-right: 10px;
+    padding: 5px 20px 5px 20px;
+}
+#contact {
+    background-color: black;
+    color: white;
+}
+
+#contact .nav-link {
+    color: white;
+}
