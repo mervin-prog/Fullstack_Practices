@@ -1,0 +1,70 @@
+Frontend :
+
+Task-1: Registration form in Html, Css and Js
+
+Task-2: Responsive Header and Footer,Navbar
+
+Task-4: Travel Website using Html, Css and Js
+
+Task-8: School website.
+
+Task-11: Create a responsive card.
+
+Task-15: Banner template.
+
+Task-18: Bootstrap Landing page.
+
+Task-20: created user Modue with to store user details in database.
+
+Task-23: Healthcare management website add modules such as exercise,bmi calculator and different diet plans based on bmi score.
+
+Task-24: create a dashboard to interact with all these modules.
+
+Task-26 : Css basics such as media queries...
+
+Task-27: Css styles such as fonts,colors..
+
+Backend :
+
+Task-3:	1.What are the possible ways to create objects in JavaScript. 2.What is a prototype chain. 3. What is the difference 		between Call, 		 Apply and Bind.  4.What is JSON and its common operations.  5.What is the purpose of the array slice 		method. 6.What is the purpose of the array splice method. What is the difference between slice and splice
+
+Task-5:	1) exception handling. 2)multi threading. 3) functional programming. 4)file I/o. 5)dsa
+
+Task-6:	RESTful Web Services:  Learn how to build RESTful APIs using frameworks like Spring Boot or JAX-RS.  Understand concepts like HTTP methods, status codes, URI design, request/response formats (JSON, XML), and authentication/authorization.
+
+Task-7:	CRUD Operation take Student data parameters (student Id , Student Name , Student Address , Student Profile picture ).
+
+Task-9:	Go through the topic of list , array list , linked list, vector, stack
+
+Task-10: jdbc and implement program 
+
+Task-12: Do the program on set, hashset, sortedset,linkedset, sortedset, Navigable set,treeset
+
+Task-13: Go through the topic of queue , primary queue,deque,array deque.
+
+Task-14: Byte and data I/O streams in java.
+
+Task-16: File I/O streams in java.
+
+Task-17:Springboot annotations.
+
+Task-19:Electricity system console based app.
+
+Task-21: Learn aop and implement it.
+
+Task-22 :store files,floders and images in database.
+
+Task-25 :1. Count Alphabets, digits, special symbols from  string
+2. learn java inner classes and implement using simple project.
+
+Task-28 :Git Basic commands and github.
+
+Task-29 :Do the research on next.js
+
+Task-30 :Js basics such as arrays,objects,classes etc..
+
+
+
+
+
+
