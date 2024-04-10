@@ -1,0 +1,17 @@
+HTML head Elements
+
+A valid HTML document with no <html> <body, and <head>
+
+A valid HTML document with no <head> element
+
+The <title> element defines the document title
+
+The <style> element contains style information
+
+The <link> element defines a relationship to an external resource
+
+The <meta> element defines special meta information
+
+The <script> element defines client-side JavaScripts
+
+The <base> element defines the base URL for all URLs
