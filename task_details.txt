@@ -28,6 +28,8 @@ Task-31: URL shortening API landing page.
 
 Task-32: HTML head Elements,styles etc...
 
+Task-33: Calculator App.
+
 Backend :
 
 Task-3:	1.What are the possible ways to create objects in JavaScript. 2.What is a prototype chain. 3. What is the difference 		between Call, 		 Apply and Bind.  4.What is JSON and its common operations.  5.What is the purpose of the array slice 		method. 6.What is the purpose of the array splice method. What is the difference between slice and splice
