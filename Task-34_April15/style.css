@@ -1,0 +1,23 @@
+@media (max-width: 992px) {
+    .event-container {
+        flex-direction: column;
+    }
+    .calendar {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-height: fit-content;
+        overflow-y: auto;
+    }
+  }
+
+  .calendar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+
+
+  
