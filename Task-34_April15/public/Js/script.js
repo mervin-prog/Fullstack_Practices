@@ -1,16 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const calendarContainer = document.getElementById("calender");
+    const calendarContainer = document.getElementById("calendar"); // Uncomment this line
+    const eventsContainer = document.querySelector(".events .card-body");
     const prevMonthBtn = document.getElementById("prevMonthBtn");
     const nextMonthBtn = document.getElementById("nextMonthBtn");
-    const todayBtn=document.getElementById("today");
+    const todayBtn = document.getElementById("today");
 
     // Initial render
     let currentMonth = new Date().getMonth();
     let currentYear = new Date().getFullYear();
     renderCalendar(currentMonth, currentYear);
-
-    
-    
 
     // Event listeners for prev/next buttons
     prevMonthBtn.addEventListener("click", function() {
@@ -80,9 +78,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     if (date === new Date().getDate() && month === new Date().getMonth() && year === new Date().getFullYear()) {
                         cell.classList.add("current-date"); // Add class to highlight current date
                         cell.style.backgroundColor = "#0d6efd";
-                        cell.style.color = "white"; 
+                        cell.style.color = "white";
                         cell.style.fontWeight = "bold"; // Set font weight
-                    }                    
+                    }
                     date++;
                 }
                 row.appendChild(cell);
@@ -100,4 +98,29 @@ document.addEventListener("DOMContentLoaded", function() {
         const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
         return monthNames[monthIndex];
     }
+
+    calendarContainer.addEventListener("click", function(event) { // Changed 'calendar' to 'calendarContainer' here
+        if (event.target.classList.contains("current-date")) {
+            const selectedDate = event.target.textContent; // Changed 'dataset.date' to 'textContent' here
+            fetch(`/events/${selectedDate}`)
+                .then(response => response.json())
+                .then(events => {
+                    eventsContainer.innerHTML = ""; // Clear previous events
+                    if (events.length > 0) {
+                        events.forEach(event => {
+                            const eventElement = document.createElement("div");
+                            eventElement.classList.add("event");
+                            eventElement.innerHTML = `
+                                <h5>${event.name}</h5>
+                                <p>${event.description}</p>
+                            `;
+                            eventsContainer.appendChild(eventElement);
+                        });
+                    } else {
+                        eventsContainer.innerHTML = "<p>No events for this date.</p>";
+                    }
+                })
+                .catch(error => console.error("Error fetching events:", error));
+        }
+    });
 });

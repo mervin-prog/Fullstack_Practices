@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Calendar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="Css/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="row event-container">
+      <div class="col-md-6 calendar">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            Calendar
+          </div>
+          <div class="card-body">
+            <button id="today" class="btn btn-primary today">Today</button>
+            <div id="calendar" class="calendar"></div>
+            
+          <button id="prevMonthBtn" class="btn btn-sm btn-light">&lt; </button>
+          <button id="nextMonthBtn" class="btn btn-sm btn-light"> &gt;</button>
+          
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 events">
+        <div class="card">
+          <div class="card-header bg-success text-white">
+            Events
+          </div>
+          <div class="card-body">
+            <% if (events.length > 0) { %>
+              <% events.forEach(function(event) { %>
+                  <div class="event">
+                      <h5><%= event.name %></h5>
+                      <p><%= event.description %></p>
+                  </div>
+              <% }); %>
+          <% } else { %>  
+              <p>No events for this date.</p>
+          <% } %>
+          
+
+            <button id="eventBtn" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#eventModal">Add Event</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="eventModalLabel">Add Event</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Form elements -->
+          <form action="/addEvent" method="post" id="eventForm">
+            <div class="mb-3">
+              <label for="eventDate" class="form-label">Event Date</label>
+              <input type="date" class="form-control" id="eventDate" name="eventDate">
+          </div>
+            <div class="mb-3">
+              <label for="eventName" class="form-label">Event Name</label>
+              <input type="text" class="form-control" id="eventName" name="eventName">
+            </div>
+            <div class="mb-3">
+              <label for="eventDescription" class="form-label">Event Description</label>
+              <textarea class="form-control" id="eventDescription" name="eventDescription" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="Js/script.js"></script>
+</body>
+</html>
