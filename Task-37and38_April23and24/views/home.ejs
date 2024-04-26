@@ -1,0 +1,36 @@
+
+<%- include('partials/header.ejs') %>
+
+<div class="container">
+      <div class="card">
+      <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            
+            <h1 class="fw-bold mb-0 fs-2">Welcome  <%= user.role_name %> !</h1>
+            
+          </div>
+      
+          <div class="modal-body p-5 pt-0 userStyles">
+            <% if (user) { %>
+                  <h2>Profile</h2>
+                  <ul>
+                        <li>First Name : <%= user.first_name%></li>
+                        <li>Last Name : <%= user.last_name %></li>
+                        <li>Role : <%= user.role_name %> </li>
+                        <li>Email : <%= user.email %></li>
+                  </ul>
+            <% } else { %>
+                  <p>No profile data found.</p>
+            <% } %>
+
+
+            <!-- Log out -->
+            <form action="/logout" method="get">
+                <button type="submit">Log out</button>
+            </form>
+          </div>
+        </div>
+      </div>
+</div>
+
+<%- include('partials/footer.ejs') %>
