@@ -12,6 +12,11 @@
       
           <div class="modal-body p-5 pt-0 userStyles">
             <% if (user) { %>
+                  <div class="image-style">
+                  <!-- Render the uploaded image -->
+                  <img src="./images/<%= user.imgpath %>" alt="Uploaded Image">
+                  </div>
+
                   <h2>Profile</h2>
                   <ul>
                         <li>First Name : <%= user.first_name%></li>

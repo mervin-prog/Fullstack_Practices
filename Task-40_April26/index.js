@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import dotenv from "dotenv";
 import pg from "pg";
 import bcrypt from "bcrypt";
+import multer from "multer";
 
 
 dotenv.config();
@@ -11,6 +12,9 @@ const app=express();
 const port=process.env.PORT;
 const saltRounds=10;
 app.use(bodyParser.urlencoded({extended:true}));
+
+// Set up Multer for handling file uploads
+//const upload = multer({ dest: 'uploads/' }); // Specify the destination directory for uploaded files
 app.use(express.static("public"));
 
 const db=new pg.Client({
@@ -36,15 +40,18 @@ app.get("/logout",(req,res)=>{
 });
 
 
-app.post("/register", async(req,res)=>{
+
+
+app.post("/register",async(req,res)=>{
     const fname=req.body.fname;
     const lname=req.body.lname;
     const role=req.body.role;
     const email=req.body.email;
     const password=req.body.password;
+    const imgPath=req.body.imgPath;
 
     try {
-        const checkResult = await db.query("SELECT * FROM details WHERE email = $1", [
+        const checkResult = await db.query("SELECT * FROM results WHERE email = $1", [
           email,
         ]);
     
@@ -58,13 +65,12 @@ app.post("/register", async(req,res)=>{
             } else {
               console.log("Hashed Password:", hash);
               const result=await db.query(
-                "INSERT INTO details (first_name, last_name, role_name, email, password) VALUES ($1, $2, $3, $4, $5) RETURNING *",
-                [fname, lname, role, email, hash]
+                "INSERT INTO results (first_name, last_name, role_name, email, imgpath, password) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *",
+                [fname, lname, role, email, imgPath, hash]
               );
               const user = result.rows[0];
               console.log(user);
-              
-              res.render("home.ejs", {user});     
+            
             }
           });
         }
@@ -73,19 +79,22 @@ app.post("/register", async(req,res)=>{
     }
 });
 
-app.post("/login", async (req, res) => {
+app.post("/login",async (req, res) => {
     const role=req.body.role;
     const email = req.body.email;
     const loginPassword = req.body.password;
     
+    
     try {
-        const result = await db.query("SELECT * FROM details WHERE email = $1", [
+        const result = await db.query("SELECT * FROM results WHERE email = $1", [
         email,
         ]);
         if (result.rows.length > 0) {
         const user = result.rows[0];
         const storedHashedPassword = user.password;
+        const imgPath=user.imgPath;
         const storedRole=user.role_name.toLowerCase();
+       
         //verifying the password
         bcrypt.compare(loginPassword, storedHashedPassword, (err, result) => {
             if (err) {
@@ -93,12 +102,13 @@ app.post("/login", async (req, res) => {
             } else {
                 const resultantRole=role.toLowerCase();
             if (result && resultantRole === storedRole) {
-                res.render("home.ejs", {user});
+                res.render("home.ejs", {user,imgPath});
             } else {
                 res.send("Incorrect Password");
             }
             }
         });
+        console.log(user);
         } else {
         res.send("User not found");
         }
