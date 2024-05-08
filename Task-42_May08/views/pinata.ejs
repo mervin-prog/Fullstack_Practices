@@ -1,0 +1,32 @@
+
+<%- include('partials/header.ejs') %>
+
+<div class="container">
+      <div class="card">
+      <div class="modal-content rounded-4 shadow">
+          <div class="modal-header p-5 pb-4 border-bottom-0">
+            
+            <h1 class="fw-bold mb-0 fs-2">Your Details !</h1>
+            
+          </div>
+      
+          <div class="modal-body p-5 pt-0 userStyles">
+            <% if (details) { %>
+                <% Object.keys(details).forEach(key => { %>
+                    <li><strong><%= key %>:</strong> <%= details[key] %></li>
+                <% }); %>
+
+            <% } else { %>
+                  <p>None found.</p>
+            <% } %>
+
+            <!-- Log out -->
+            <form action="/logout" method="get">
+                <button type="submit">Log out</button>
+            </form>
+          </div>
+        </div>
+      </div>
+</div>
+
+<%- include('partials/footer.ejs') %>
