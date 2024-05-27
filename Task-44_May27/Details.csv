@@ -1,0 +1,6 @@
+"user_id","first_name","last_name","role_name","email","password","reset_token","reset_token_expiry"
+8,"jack","sparrow","manager","jack@gmail.com","$2b$10$weadTPpgYZ/4IYCe4iBx7OAxkxlLGRLm050hgEeSSsEev4n2k6X9m",NULL,NULL
+9,"tony","stark","admin","tony@gmail.com","$2b$10$4ydHJSjEsF/e.ncqas/6nu5bNXpxA/8vKZd0I6l/pahwZXLPSAR2y",NULL,NULL
+10,"bruce","wayne","admin","bruce@gmail.com","$2b$10$gRqQQRfxGmaWwGOUguaS4.tuBwFJbSNtKx/SNSszmhOhtIQt2yGA.",NULL,NULL
+11,"demo","demo","manager","demo@gmail.com","$2b$10$GukrVYJtUEyDZaUYoXCFj.NUbN1qfKwzAw7n8J46fP6czdt9ib6CG",NULL,NULL
+12,"Mervin","Renie","admin","mervinrenie@gmail.com","$2b$10$U9h/xQp9Bq60buJqsamrX.gxtKs5AiaRfHwSqS/aLmzsSIL/QZ52e",NULL,NULL
