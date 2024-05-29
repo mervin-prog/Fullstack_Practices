@@ -1,0 +1,47 @@
+
+h1{
+  padding: 10px;
+  font-size: 50px;
+}
+
+.App{
+  max-width: max-content;
+  margin: 30px auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 20px white;
+}
+
+.input-area{
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.input-text::placeholder{
+  font-style: italic !important;
+}
+
+.input-text{
+  padding: 10px;
+  font-family: 'Sevillana-Regular',cursive;
+  font-size: 30px;
+}
+
+.color-picker{
+  font-family: 'Times New Roman', Times, serif;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+button{
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px;
+  margin-left: 800px;
+  margin-top: 20px;
+  font-weight: bold;
+}
