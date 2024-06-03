@@ -1,0 +1,37 @@
+.resume-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.preview-section{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 100px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px #fff;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.profile-photo{
+    padding: 10px;
+    margin: 10px;
+    margin-left: 50px;  
+}
+.round-image{
+    border-radius: 50%;
+}
+
+.profile-details{
+    margin: 20px auto;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+.details-btn{
+    position: relative;
+    left: -50px;
+}
