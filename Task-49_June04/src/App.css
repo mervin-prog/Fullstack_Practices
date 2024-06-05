@@ -1,0 +1,227 @@
+
+  /************ Navbar Css ************/
+  nav.navbar {
+    padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition:  0.32s ease-in-out;
+}
+nav.navbar.scrolled {
+    padding: 0px 0;
+    background-color: #F3F3F3;
+}
+nav.navbar a.navbar-brand {
+    color: #000000;
+    letter-spacing: 1px;
+    margin-right: 70px;
+    font-size: 50px;
+    font-weight: 300;
+    text-shadow: 0px 0px 1.5px #000000;
+}
+nav.navbar .navbar-nav .nav-link.navbar-link {
+    font-weight: 400;
+    color: #000000 !important;
+    letter-spacing: 0.8px;
+    padding: 0 25px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    opacity: 2;
+}
+
+.custom-btn button{
+    font-weight: 700;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 18px 34px;
+    font-size: 18px;
+    margin-left: 18px;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+    letter-spacing: 1px;
+}
+.custom-btn button span{
+    z-index: 1;
+}
+.custom-btn button::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.custom-btn button:hover{
+    color: #ffffff;
+}
+.custom-btn button:hover::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.toggle {
+background-color: #000 !important;
+}
+
+.about-btn{
+border: none !important;
+color: #ffffff !important;
+background-color: #ffffff;
+}
+
+  /************ Banner Css ************/
+
+.banner-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-image: url('/images/img2.jpg');
+  background-size: cover;
+  height: 400px;
+  width: 100%; */
+  position: relative; 
+}
+
+.banner-content{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.banner-heading{
+  top: 50%;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.banner-desc{
+  top: 70%;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.image-alt{
+  width: auto;
+  height: 600px;
+  margin-top: 30px;
+}
+
+  /************ Products Css ************/
+
+.product-heading {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #74512D;
+  letter-spacing: 2.0px;
+  opacity: 0.75;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}
+
+.products-container .card{
+  margin: 10px 20px;
+  padding: 20px 20px;
+  border-radius: 50px;
+  background-color: #F3F3F3;
+  max-width: 600px;
+  margin: auto 1rem;
+}
+
+.products-container .card:hover {
+  box-shadow: 0 0 10px grey;
+}
+
+.products-container .card-body {
+  padding: 20px;
+  display: block;
+  justify-content: space-between;
+}
+
+.product-title {
+  font-size: 30px;
+  color: #000000;
+  opacity: 0.75;
+  text-align: center;
+}
+
+.product-text {
+  font-size: 20px;
+  color: #555;
+  justify-content: space-between;
+}
+
+.price-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.product-price , .product-offer{
+  font-size: 20px;
+}
+
+.product-offer{
+  color: #B67352;
+  font-weight: 500;
+}
+
+.cart-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.product-button{
+  background-color: #B67352;
+  border: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 10px 10px;
+}
+
+.best-products-container .card{
+  margin: 10px 20px;
+  padding: 20px 20px;
+  border-radius: 50px;
+  background-color: #F3F3F3;
+  max-width: 50%;
+}
+
+.best-product-image{
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}
+
+.footer{
+  margin: 20px 20px;
+  padding: 20px 20px;
+}
+.footer-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  opacity: 0.75;
+  color: #555;
+}
