@@ -10,6 +10,7 @@ import bestSellers from "./sellersData";
 import best from "./best";
 import BestProduct from "./components/BestProduct";
 import Footer from "./components/Footer";
+import Review from "./components/Review";
 
 
 const responsive = {
@@ -51,13 +52,24 @@ function App(props){
         showDots={true}
         responsive={responsive}
         autoPlay={props.deviceType !== "desktop" ? true : false}
-        autoPlaySpeed={3000}
+        autoPlaySpeed={1000}
   >
           {products}
         </Carousel>
 
         <h2 className="product-heading">Exclusive Products</h2>
         {bestProducts}
+
+      <div className="min-vh-100 d-flex flex-column justify-content-center px-3 px-lg-5" style={{ backgroundColor:' #F3F3F3'}}>
+      <h1 className="product-heading">Feedback Corner</h1>
+
+      <div className="d-flex flex-column align-items-center flex-xl-row gap-3 justify-content-center py-3 my-3">
+        <Review name="Will Smith" />
+        <Review name="John Carter" />
+        <Review name="Cathy Helen" />
+      </div>
+
+    </div>
 
         <Footer />
     </div>

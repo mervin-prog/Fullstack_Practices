@@ -3,7 +3,6 @@ import React from 'react';
 function Banner() {
 
   return (
-    <div className="banner">
       <div className="banner-container">
 
         <div className="banner-content">
@@ -11,14 +10,13 @@ function Banner() {
           <h2 className='banner-heading'>Discover your own Fashion</h2>
           <p className='banner-desc'>Explore the latest trends and timeless classics for every occasion and maintain your unique style.</p>
 
-          <span className="custom-btn">
+          <div className="shop-btn">
           <button><span>Shop Now</span></button>
-          </span>
+          </div>
         </div>
 
-        <img className="image-alt" src="/images/img2.jpg"></img>
+        {/* <img className="image-alt" src="/images/img2.jpg"></img> */}
       </div>
-    </div>
   );
 }
 

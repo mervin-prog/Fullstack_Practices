@@ -43,12 +43,12 @@ const best = [
     },
     {
       id :6,
-      title: "Luxury Cashmere Scarf with Hand-Embroidered Details",
+      title: "Luxury Cashmere Scarf",
       image: "/images/prod6.jpg",
       description: "Comfortable and stylish for everyday wear.",
       price: 90.99,
       discount: 10, 
-    },
+    }
   ];
 
   export default best;

@@ -27,21 +27,20 @@ function Header(){
     return(
         <Navbar expand="md"  className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="#home">Fashynation</Navbar.Brand>
+          <Navbar.Brand href="#home" style={{letterSpacing: '3.5px'}}>Fashynation</Navbar.Brand>
           <Navbar.Toggle aria-controls= "basic-navbar-nav" className="toggle"/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
 
               <Nav.Link href="#home" value="home" className={activeLink==="home" ? "active navbar-link" : "navbar-link"} onClick={handleClick.bind(null,"home")}>Home</Nav.Link>
               <Nav.Link href="#shop" value="shop" className={activeLink==="shop" ? "active navbar-link" : "navbar-link"} onClick={handleClick.bind(null,"shop")}>Shop</Nav.Link>
-              <Nav.Link href="#features" value="features" className={activeLink==="features" ? "active navbar-link" : "navbar-link"} onClick={handleClick.bind(null,"features")}>Features</Nav.Link>
               <Nav.Link href="#products" value="products" className={activeLink==="products" ? "active navbar-link" : "navbar-link"} onClick={handleClick.bind(null,"products")}>Products</Nav.Link>
               <Nav.Link href="#testimonial" value="testimonial" className={activeLink==="testimonial" ? "active navbar-link" : "navbar-link"} onClick={handleClick.bind(null,"testimonial")}>Testimonial</Nav.Link>
               
             </Nav>
-            <span className="custom-btn">
+            <div className="custom-btn">
             <button><span>Contact</span></button>
-            </span>
+            </div>
             
           </Navbar.Collapse>
         </Container>
