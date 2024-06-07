@@ -39,7 +39,7 @@ function Header(){
               
             </Nav>
             <div className="custom-btn">
-            <button><span>Contact</span></button>
+            <a href="#footer"><button><span>Contact</span></button></a>
             </div>
             
           </Navbar.Collapse>

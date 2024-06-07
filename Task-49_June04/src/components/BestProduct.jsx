@@ -3,7 +3,7 @@ import React from "react";
 function BestProduct(props){
 
     return (
-        <div className="best-products-container">
+        <div className="best-products-container" id="products">
         <div className="card">
             <img className="best-product-image" src={props.image} alt="product image" />
             <h2 className="product-title">{props.title}</h2>
