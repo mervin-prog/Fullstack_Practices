@@ -1,1 +1,1 @@
-Numetry Technologies Internship 2024
+Fullstack Practices by performing daily tasks
